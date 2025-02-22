@@ -1,66 +1,64 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-	<title>Student Details</title>
-	<title>Student Details Table</title>
-  <style>
-    table {
-      background-color: yellow;
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      border: 1px solid rgb(0, 0, 0);
-      padding: 8px;
-      text-align: left;
-    }
-    caption {
-      font-size: 1.5em;
-      font-weight: bold;
-      margin: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Table</title>
+    <style>
+        /* Styling for the table */
+        table {
+            background-color: yellow;
+            border-collapse: collapse; /* Ensures borders are not doubled */
+        }
+        
+        th, tr, td {
+            border: 1px solid black;
+        }
+        
+        th {
+            text-align: center; /* Centers header text */
+        }
+        
+        td {
+            padding: 5px; /* Adds some space around cell content */
+            text-align: center; /* Centers cell content horizontally */
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-	<table>
-    <caption>Student Details</caption>
-    <thead>
-      <tr>
-        <th>NAME</th>
-        <th>AGE</th>
-        <th>BRANCH</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>John Doe</td>
-        <td>20</td>
-        <td>Computer Science</td>
-      </tr>
-      <tr>
-        <td>Jane Smith</td>
-        <td>22</td>
-        <td>Electrical Engineering</td>
-      </tr>
-      <tr>
-        <td>Mike Johnson</td>
-        <td>21</td>
-        <td>Mechanical Engineering</td>
-      </tr>
-      <tr>
-        <td>Alice Brown</td>
-        <td>23</td>
-        <td>Civil Engineering</td>
-      </tr>
-    </tbody>
-  </table>
-</body>
 
-</html>
+<!-- Student Details Table -->
+<table style="width:100%">
+    <!-- Caption for the table -->
+    <caption>Student Details.</caption>
+
+    <!-- Headers section -->
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Branch</th>
+        </tr>
+    </thead>
+
+    <!-- Data rows section -->
+    <tbody style="background-color:white;"> <!-- Optional background color change for better readability -->
+        <!-- Example data row 1 -->
+        <tr style="background-color:white;">
+            <td>Alice Smith</td><td>20</td><td>CSE</td></tr>
+
+         <!-- Example data row 2 -->
+         <tr style="background-color:white;">
+             <td>Bobby Brown</td><td>21</td><td>ECE</td></tr>
+
+         <!-- Example data row 3 (add more as needed) -->
+         <!--<tr style="background-color:white;">
+             Add more student details here...
+         </tr>-->
+     </tbody>
+
+     <!--<tfoot><!-- Optional footer section --></tfoot>-->
+ </table>
+
+ </body>
+ </html> 
