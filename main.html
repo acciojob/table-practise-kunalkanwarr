@@ -3,52 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Details Table</title>
+    <title>To-Do App</title>
     <style>
+        /* Style for table borders */
         table {
-            background-color: yellow;
+            background-color: yellow; /* Optional background color */
             border-collapse: collapse;
-            width: 300px;
-            margin: auto;
+            width: 300px; /* Adjust width as needed */
+            margin: auto; /* Center the table */
         }
 
         th, td {
-            border: 1px solid black; /* Explicit border style */
+            border: 1px solid black;
             text-align: center;
             padding: 8px;
         }
-
+        
         caption {
             text-align: center;
             font-weight: normal; /* Removing bold */
             margin-bottom: 10px;
         }
+        
+        body {
+          font-family: Arial, sans-serif;  
+          background-color:#f2f2f2;  
+          line-height:normal; 
+          color:black;
+      }
+      
+      .todo-table{
+         box-shadow:none !important;
+
+      }
+
     </style>
 </head>
+
 <body>
 
-    <table>
-        <caption>Student Details</caption>
-        <thead>
-            <tr>
-                <th>NAME</th>
-                <th>AGE</th>
-                <th>BRANCH</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Shaw</td>
-                <td>20</td>
-                <td>CSE</td>
-            </tr>
-            <tr>
-                <td>Adil</td>
-                <td>21</td>
-                <td>ECE</td>
-            </tr>
-        </tbody>
-    </table>
+<!-- To-Do List Table -->
+<table class="todo-table">
+    <!-- Caption for the table -->
+    <caption>To-Do List</caption>
 
-</body>
-</html>
+    <!-- Headers section -->
+    <thead>
+        <tr>
+            <th>Task</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+
+    <!-- Data rows section -->
+    <tbody style="background-color:white;">
+         <!-- Example data row 1 -->
+         <tr style="background-color:white;">
+             <td>Buy groceries</td><td>Pending</td></tr>
+
+         <!-- Example data row 2 -->
+         <!--<tr style="background-color:white;">-->
+             <!--<td>Add more tasks here...</td><td>Pending</td>-->
+         <!--</tr>-->
+     </tbody>
+
+     <!--<tfoot><!-- Optional footer section --></tfoot>-->
+ </table>
+
+ </body> 
