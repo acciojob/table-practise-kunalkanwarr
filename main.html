@@ -5,60 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Details Table</title>
     <style>
-        /* Styling for the table */
         table {
             background-color: yellow;
-            border-collapse: collapse; /* Ensures borders are not doubled */
+            border-collapse: collapse;
+            width: 300px; /* Adjust width as needed */
+            margin: auto; /* Center the table */
         }
-        
-        th, tr, td {
+
+        th, td {
             border: 1px solid black;
+            text-align: center;
+            padding: 8px;
         }
-        
-        th {
-            text-align: center; /* Centers header text */
-        }
-        
-        td {
-            padding: 5px; /* Adds some space around cell content */
-            text-align: center; /* Centers cell content horizontally */
+
+        caption {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
 
-<!-- Student Details Table -->
-<table style="width:100%">
-    <!-- Caption for the table -->
-    <caption>Student Details.</caption>
+    <table>
+        <caption>Student Details</caption>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>BRANCH</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Shaw</td>
+                <td>20</td>
+                <td>CSE</td>
+            </tr>
+            <tr>
+                <td>Adil</td>
+                <td>21</td>
+                <td>ECE</td>
+            </tr>
+        </tbody>
+    </table>
 
-    <!-- Headers section -->
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Branch</th>
-        </tr>
-    </thead>
-
-    <!-- Data rows section -->
-    <tbody style="background-color:white;"> <!-- Optional background color change for better readability -->
-        <!-- Example data row 1 -->
-        <tr style="background-color:white;">
-            <td>Alice Smith</td><td>20</td><td>CSE</td></tr>
-
-         <!-- Example data row 2 -->
-         <tr style="background-color:white;">
-             <td>Bobby Brown</td><td>21</td><td>ECE</td></tr>
-
-         <!-- Example data row 3 (add more as needed) -->
-         <!--<tr style="background-color:white;">
-             Add more student details here...
-         </tr>-->
-     </tbody>
-
-     <!--<tfoot><!-- Optional footer section --></tfoot>-->
- </table>
-
- </body>
- </html> 
+</body>
+</html>
